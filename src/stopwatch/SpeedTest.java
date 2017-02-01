@@ -166,5 +166,5 @@ public class SpeedTest {
 		SpeedTest.testSumDoublePrimitive(counter);
 		SpeedTest.testSumDouble(counter);
 		SpeedTest.testSumBigDecimal(counter);
-	}
+	}     
 }
