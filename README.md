@@ -21,7 +21,7 @@ Add 1 billion BigDecimal using array      | 9.018126 sec
 ---->Answer: double runs on registry that is faster than run on cpu. Double and Bigdecimal same as String but Bigdecimal is hard to collect in data, so that why BigDecimal is slower than double and Double objects.
 
 4.Why is there such a big difference in the time used to append chars to a String and StringBuilder? Even though we eventually "copy" the StringBuilder into a String so the final is the same.
----->Answer:
+---->Answer:Because when you append chars in String. String will create new one but StringBuilder is not. StringBuilder will automatically increase chars array. So that why StringBuilder is faster than String.
 
 5.Why is there a significant difference in times to sum double, Double, and BigDecimal values?
----->Answer:
+---->Answer: double runs on registry but Double and BigDecimal is not.
