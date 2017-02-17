@@ -1,7 +1,7 @@
 package stopwatch;
 
 /**
- * 
+ * Count the time of runnable tasks.
  * @author Phanuwatch Luangpradit
  *
  */
@@ -18,7 +18,7 @@ public class TaskTimer {
 	
 	/**
 	 * Measure and print the result of program.
-	 * @param runnable
+	 * @param runnable task to measure the time.
 	 */
 	public void measureAndPrint(Runnable runnable){
 		timer.start();
