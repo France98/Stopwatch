@@ -1,7 +1,7 @@
 package stopwatch;
 
 /**
- * Count the time of runnable tasks.
+ * Use to measure the time in seconds.
  * @author Phanuwatch Luangpradit
  *
  */
@@ -10,7 +10,7 @@ public class TaskTimer {
 	private Stopwatch timer;
 	
 	/**
-	 * Use Stopwatch.
+	 * Initialize the new TaskTimer.
 	 */
 	public TaskTimer(){
 		timer = new Stopwatch();
@@ -23,8 +23,8 @@ public class TaskTimer {
 	public void measureAndPrint(Runnable runnable){
 		timer.start();
 		runnable.run();
-		timer.stop();
 		System.out.println(runnable.toString());
+		timer.stop();
 		System.out.printf("Elapsed time %.6f sec\n\n", timer.getElapsed());
 	}
 }
